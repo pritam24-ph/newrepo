@@ -1,0 +1,11 @@
+---
+- name: my first code
+  hosts: all
+  gather_facts: yes
+  become: true
+
+  tasks:
+  - name: create a user pritam 
+    user: 
+      name: pritam 
+      comment: devops engineer
